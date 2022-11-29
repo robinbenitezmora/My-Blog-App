@@ -1,9 +1,6 @@
 AllCops:
   NewCops: enable
   Exclude:
-    - "db/**/*"
-    - "bin/*"
-    - "config/**/*"
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
@@ -13,24 +10,18 @@ AllCops:
 Layout/LineLength:
   Max: 200
 Metrics/MethodLength:
-  Include:
-    - "app/controllers/*"
-    - "app/models/*"
   Max: 50
 Metrics/AbcSize:
-  Include:
-    - "app/controllers/*"
-    - "app/models/*"
   Max: 50
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe', 'schema.rb']
+  AllowedMethods: ['describe','schema.rb' ]
   Max: 50
 Metrics/CyclomaticComplexity:
-  Max: 25
+  Max: 12
 Metrics/PerceivedComplexity:
-  Max: 15
+  Max: 10
 
 Style/Documentation:
   Enabled: false
@@ -47,6 +38,8 @@ Style/FrozenStringLiteralComment:
 
 Layout/HashAlignment:
   EnforcedColonStyle: key
+Layout/EndOfLine:
+  Enabled: false
 Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
@@ -62,4 +55,3 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-  
