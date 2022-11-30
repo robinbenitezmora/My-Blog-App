@@ -1,6 +1,9 @@
 AllCops:
   NewCops: enable
   Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/*'
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
