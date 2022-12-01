@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: My_Blog_App_test
+  database: blogdb
   username: postgres
   password: peti2020#
 
