@@ -39,4 +39,12 @@ RSpec.describe Post, type: :model do
       expect(assc.macro).to eq :has_many
     end
   end
+
+  context 'The post model should have a method' do
+    it 'that returns the post title' do
+      @user01 = User.new(name: 'Annette', photo: 'https://i.imgur.com/1J3wQYt.jpg', bio: 'I am a software developer')
+      post = Post.new(author: @user01, title: 'This is a post', text: 'This is a post text')
+      expect(post.title).to eq('This is a post')
+    end
+  end
 end
