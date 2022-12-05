@@ -1,0 +1,10 @@
+<h1>All posts made by <%= @user.name %></h1>
+
+<% @posts.each do |post| %>
+  <p>
+    Id: <%= post.id %>,
+    Title: <%= post.title %>,
+    Text: <%= post.text %>
+    Created at: <%= post.created_at %>
+  </p>
+<% end %>
