@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @user = params[:user_id]
-    @posts = Post.where(user_id: @user)  
+    @posts = Post.where(user_id: @user)
   end
 
   def show
