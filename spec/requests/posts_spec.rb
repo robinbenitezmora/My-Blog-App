@@ -8,6 +8,16 @@ RSpec.describe PostsController, type: :request do
         expect(response).to be_successful
       end
 
+      it 'response includes correct placeholder text' do
+        get @posts_path
+        expect(response.body).to include('User')
+      end
+
+      it 'response include text' do
+        get @posts_path
+        expect(response.body).to include('User')
+      end
+
       it 'Render the index template at root path' do
         get @posts_path
         expect(response).to render_template(:index)

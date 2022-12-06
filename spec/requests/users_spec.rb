@@ -11,6 +11,14 @@ RSpec.describe UsersController, type: :request do
         expect(response).to have_http_status(200)
       end
 
+      it 'Should response body include text' do
+        expect(response.body).to include('User')
+      end
+
+      it 'Should response body includes correct placeholder text' do
+        expect(response.body).to include('User')
+      end
+
       it 'Should render the index template' do
         expect(response).to render_template(:index)
       end
