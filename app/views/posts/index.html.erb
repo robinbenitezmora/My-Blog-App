@@ -1,10 +1,23 @@
-<h1>All posts made by <%= @user.name %></h1>
-
-<% @posts.each do |post| %>
-  <p>
-    Id: <%= post.id %>,
-    Title: <%= post.title %>,
-    Text: <%= post.text %>
-    Created at: <%= post.created_at %>
-  </p>
+<h1>Posts index</h1>
+<h2>Listing Posts</h2>
+<div>
+  <img src="<%= @user.photo %>">
+  <h2><%= @user.name %></h2>
+</div>
+<p>Number of posts: <%= @user.posts.count %></p> <br>
+<% @user.all_posts.each do |post| %>
+  <div>
+    <%= link_to user_post_path(@user, post) do %>
+      <h3>Post #<%= post.id %> <%= post.title %> </h3>
+    <% end %>
+    <p><%= post.text %></p>
+    <span>Comments: <%= post.comments.count %></span>
+    <span>Likes: <%= post.likes.count %></span>
+  </div>
+  <div>
+    <% post.most_recent_comments.each do |comment| %>
+      <p><%= comment.author.name %> said: <%= comment.text %></p>
+    <% end %>
+  </div>
+  <br>
 <% end %>
