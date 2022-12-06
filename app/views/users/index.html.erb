@@ -1,10 +1,11 @@
-<h1>Users#index</h1>
+<h1>Users index</h1>
 <h2>Listing Users</h2>
 
 <% @users.each do |user| %>
-  <p>
-    Id: <%= user.id %>,
-    Name: <%= user.name %>,
-    Bio: <%= user.bio %>
-  </p>
+  <div>
+    <%= link_to user do %>
+    <h2><%= user.name %></h2>
+    <% end %>
+    <p>Number of posts: <%= user.posts.count %></p>
+  </div>
 <% end %>
