@@ -1,6 +1,22 @@
-<h1>Users#show</h1>
-<h3>
-  Show information for User with id: <%= @user.id %>,
-  Name: <%= @user.name %>,
-  Bio: <%= @user.bio %>
-</h3>
+<h1>Users show</h1>
+<h3>These are the details of the user you selected:</h3>
+
+<img src="<%= @user.photo %>" alt="Avatar" />
+<h2><%= @user.name %></h2>
+<p>Number of posts: <%= @user.posts.count %></p>
+<%= link_to "Back to users index", users_path %>
+<div>
+  <h3>Bio</h3>
+  <p><%= @user.bio %></p>
+</div>
+<% @posts.each do |post| %>
+  <div>
+    <h3>Post #<%= post.id %> <%= post.title %> </h3>
+    <p><%= post.text %></p>
+    <span>Comments: <%= post.comments.count %></span>
+    <span>Created at: <%= post.created_at %></span>
+    <span>Likes: <%= post.likes.count %></span>
+  </div>
+<% end %>
+<br>
+<%= button_to "See all posts", user_posts_path(@user.id), method: :get %>
