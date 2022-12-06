@@ -76,6 +76,5 @@ group :test do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
   gem 'rails-controller-testing'
 end
