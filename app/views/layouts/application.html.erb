@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <header>
+      <div>Logo</div>
+      <nav>
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Posts", posts_path %></li>
+          <li><%= link_to "Users", users_path %></li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
