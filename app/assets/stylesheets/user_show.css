@@ -15,7 +15,7 @@ h3 {
   padding: 0 0.5rem;
 }
 
-.user_show, 
+.user_show,
 .user_bio {
   display: flex;
   justify-content: space-between;
