@@ -1,11 +1,13 @@
 <h1>Users show</h1>
 <h3>These are the details of the user you selected:</h3>
 
-<img src="<%= @user.photo %>" alt="Avatar" />
-<h2><%= @user.name %></h2>
-<p>Number of posts: <%= @user.posts.count %></p>
-<%= link_to "Back to users index", users_path %>
-<div>
+<div class="user_show">
+  <img src="<%= @user.photo %>" alt="Avatar" />
+  <h2><%= @user.name %></h2>
+  <p>Number of posts: <%= @user.posts.count %></p>
+</div>
+
+<div class="user_bio">
   <h3>Bio</h3>
   <p><%= @user.bio %></p>
 </div>
@@ -20,3 +22,6 @@
 <% end %>
 <br>
 <%= button_to "See all posts", user_posts_path(@user.id), method: :get %>
+<br>
+<%= link_to "Back to users index", users_path %>
+
