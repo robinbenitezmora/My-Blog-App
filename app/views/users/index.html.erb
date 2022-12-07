@@ -1,8 +1,8 @@
-<h1>Users index</h1>
-<h2>Listing Users</h2>
+<h1>Users Index</h1>
+<h2>Users List</h2>
 
 <% @users.each do |user| %>
-  <div>
+  <div class="user_index">
     <%= link_to user do %>
     <h2><%= user.name %></h2>
     <% end %>

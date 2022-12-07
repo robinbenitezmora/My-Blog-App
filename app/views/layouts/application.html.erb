@@ -13,13 +13,11 @@
   <body>
     <header>
       <div>Logo</div>
-      <nav>
-        <ul>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Posts", posts_path %></li>
-          <li><%= link_to "Users", users_path %></li>
-        </ul>
-      </nav>
+      <ul>
+        <li>
+          <a href="/">Users index</a>
+        </li>
+      </ul>
     </header>
     <%= yield %>
   </body>
