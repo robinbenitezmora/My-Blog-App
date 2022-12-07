@@ -1,10 +1,10 @@
-<h1>Posts index</h1>
-<h2>Listing Posts</h2>
-<div>
+<h1>Posts Index</h1>
+<h2>Post List</h2>
+<div class="post_index">
   <img src="<%= @user.photo %>">
   <h2><%= @user.name %></h2>
+  <p>Number of posts: <%= @user.posts.count %></p>
 </div>
-<p>Number of posts: <%= @user.posts.count %></p> <br>
 <% @user.all_posts.each do |post| %>
   <div>
     <%= link_to user_post_path(@user, post) do %>
