@@ -1,6 +1,15 @@
-<h1>Post #<%= @post.id %> of the user #<%= @user %></h1>
-<p>
-  Title: <%= @post.title %>,
-  Text: <%= @post.text %>
-  Created at: <%= @post.created_at %>
-</p>
+<h1>Posts show</h1>
+<h2>These are the details of the post you selected:</h2>
+<div>
+  <p>Post #<%= @post.id %> by <%= @post.author.name %></p>
+  <div>
+    <h3><%= @post.title %></h3>
+    <p><%= @post.text %></p>
+  </div>
+  <div>
+    <h3>Comments</h3>
+    <% @post.comments.each do |comment| %>
+      <p><%= comment.author.name %> said: <%= comment.text %></p>
+    <% end %>
+  </div>
+</div>

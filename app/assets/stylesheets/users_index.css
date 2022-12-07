@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #161010;
+  margin: 1rem 0;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #161010;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+}
+
+.user_index {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #161010;
+  border-radius: 0.5rem;
+  background-color: #fcf5f5;
+  margin: 0.3rem 0;
+}
