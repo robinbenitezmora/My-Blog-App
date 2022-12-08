@@ -1,0 +1,14 @@
+<div id="new_post">
+  <h1>New Post</h1>
+  <div class="post_index">
+    <img src="<%= @user.photo %>">
+    <h2><%= @user.name %></h2>
+    <p>Number of posts: <%= @user.posts.count %></p>
+  </div>
+  <%= form_with model: Post.new, url: user_posts_path do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <%= form.label :text %>
+    <%= form.text_area :text %>
+    <%= form.submit "Add Post" %>
+  <% end %>
