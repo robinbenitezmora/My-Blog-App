@@ -104,4 +104,8 @@ RSpec.describe 'User post index page', type: :feature do
     expect(page).to have_content(post1.title)
     expect(page).to have_content(post1.text)
   end
+
+  it 'I can see the user\'s comments' do
+    expect(page).to have_content(comment.text)
+  end
 end
