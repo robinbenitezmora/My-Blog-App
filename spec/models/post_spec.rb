@@ -16,11 +16,6 @@ RSpec.describe Post, type: :model do
       subject.title = nil
       expect(subject).to_not be_valid
     end
-
-    it 'is only valid with a text' do
-      subject.text = nil
-      expect(subject).to_not be_valid
-    end
   end
 
   context 'Testing the post associations' do
