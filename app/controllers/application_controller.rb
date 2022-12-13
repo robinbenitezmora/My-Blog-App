@@ -1,7 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_session
 
-  before_action :authenticate_user!
+  before_action :update_parameters, if: :devise_controller?
+    
+  end
 
   protected
 
