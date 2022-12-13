@@ -16,16 +16,6 @@ RSpec.describe User, type: :model do
       subject.name = nil
       expect(subject).to_not be_valid
     end
-
-    it 'is only valid with a photo' do
-      subject.photo = nil
-      expect(subject).to_not be_valid
-    end
-
-    it 'is only valid with a bio' do
-      subject.bio = nil
-      expect(subject).to_not be_valid
-    end
   end
 
   context 'Testing the user associations' do
