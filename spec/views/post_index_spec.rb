@@ -61,7 +61,7 @@ RSpec.describe 'User post index page', type: :feature do
     Comment.create(
       post_id: post2.id,
       author_id: user1.id,
-      text: 'I am the best'
+      text: 'I am the best.'
     )
   end
 
