@@ -11,6 +11,9 @@
     <% @post.comments.each do |comment| %>
       <p><%= comment.author.name %> said: <%= comment.text %></p>
     <% end %>
+<% if can? :destroy, comment %>
+          <%= button_to 'Delete comment', user_post_comment_path(@user, @post, comment), method: :delete %>
+<% end %>
   </div>
   <%= button_to "Check all Posts", user_posts_path(@user.id), method: :get %>
   <%= button_to link_to "Comment", new_user_post_comment_path(author_id: @post.author.id, post_id: @post.id), method: :get %>
