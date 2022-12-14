@@ -166,6 +166,11 @@ To run tests, run the following command:
 
 👤 **Author2**
 
+👤 **Oluyemi Paul**
+- GitHub: [@Ol-create](https://www.github.com/Ol-create)
+- Twitter: [@OluyemiPaul99](https://twitter.com/OluyemiPaul99)
+- LinkedIn: [@paul-oluyemi](https://linkedin.com/in/paul-oluyemi)
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
