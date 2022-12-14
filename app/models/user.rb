@@ -19,7 +19,7 @@ class User < ApplicationRecord
     posts.order(created_at: :desc)
   end
 
-  Roles = [ :admin, :default ]
+  Roles = %i[admin default].freeze # rubocop:todo Naming/ConstantName
 
   def is?(requested_role)
     self.role = requested_role.to_s
