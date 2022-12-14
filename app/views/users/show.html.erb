@@ -18,6 +18,9 @@
     <span>Comments: <%= post.comments.count %></span>
     <span>Created at: <%= post.created_at %></span>
     <span>Likes: <%= post.likes.count %></span>
+    <% if can? :destroy, post %>
+    <%= button_to "Delete", user_post_path(@user, post), method: :delete %>
+ <% end %>
   </div>
 <% end %>
 <br>
