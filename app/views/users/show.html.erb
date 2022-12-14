@@ -1,6 +1,5 @@
 <h1>Users show</h1>
 <h3>These are the details of the user you selected:</h3>
-<%= link_to 'Edit Profile', edit_user_registration_path %>
 
 <div class="user_show">
   <img src="<%= @user.photo %>" alt="Avatar" />
@@ -19,6 +18,9 @@
     <span>Comments: <%= post.comments.count %></span>
     <span>Created at: <%= post.created_at %></span>
     <span>Likes: <%= post.likes.count %></span>
+    <% if can? :destroy, post %>
+      <%= button_to "Delete", user_post_path(@user, post), method: :delete %>
+    <% end %>
   </div>
 <% end %>
 <br>

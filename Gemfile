@@ -33,6 +33,9 @@ gem 'devise'
 # Use mailcatcher for emails
 gem 'mailcatcher'
 
+# Use cancan in order to work authorizations
+gem 'cancancan'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

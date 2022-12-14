@@ -13,6 +13,9 @@
     <p><%= post.text %></p>
     <span>Comments: <%= post.comments.count %></span>
     <span>Likes: <%= post.likes.count %></span>
+    <% if can? :destroy, post %>
+      <%= button_to "Delete", user_post_path(@user, post), method: :delete %>
+    <% end %>
   </div>
   <div>
     <% post.most_recent_comments.each do |comment| %>

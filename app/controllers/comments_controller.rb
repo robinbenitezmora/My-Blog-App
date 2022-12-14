@@ -19,5 +19,12 @@ class CommentsController < ApplicationController
     def comment_params # rubocop:todo Lint/NestedMethodDefinition
       params.require(:comment).permit(:text)
     end
+
+    def destroy # rubocop:todo Lint/NestedMethodDefinition
+      comment = Comment.find_by!(params[:id])
+      comment.destroy
+      flash[:notice] = "The comment ##{params[:id]} was deleted"
+      redirect_back(fallback_location: root_path)
+    end
   end
 end
