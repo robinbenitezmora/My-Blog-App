@@ -19,6 +19,11 @@
         </li>
       </ul>
     </header>
+    <h3 class="notice"><%= notice %></h3>
+    <h3 class="alert"><%= alert %></h3>
+    <%= if user_signed_in? %>
+    <%= link_to 'sign out' , destroy_user_session_path, method: :delete %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
