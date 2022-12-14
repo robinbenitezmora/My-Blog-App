@@ -8,7 +8,7 @@ Modify this file to match your project and remove sections that don't apply.
 
 REQUIRED SECTIONS:
 - Table of Contents
-- About the Project
+- About the Project.
   - Built With
   - Live Demo
 - Getting Started
