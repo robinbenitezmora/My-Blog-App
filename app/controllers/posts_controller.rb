@@ -6,10 +6,8 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @user.posts }
-      format.xml { render xml: @user.posts
+      format.xml { render xml: @user.posts }
     end
-  end
-
   end
 
   def show

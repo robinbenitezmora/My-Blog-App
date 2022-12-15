@@ -1,10 +1,10 @@
 class Api::V1::CommentsController < Api::ApplicationController
-  def  index
+  def index
     comments = Comment.where(author_id: params[:user_id])
     render json: comments, status: :ok
   end
 
-  def  create
+  def create
     comment = Comment.new(text: params[:comment][:text], post_id:, author_id:)
     if comment.save
       render json: comment, status: :created
