@@ -165,11 +165,11 @@ To run tests, run the following command:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/robin-benitez-mora/)
 
 👥 **Author2**
-👤 Diego Hernández
 
-GitHub: [@diehoh40](https://github.com/diegoh40)
-Twitter: [@Diegoart80](https://twitter.com/Diegoart80)
-LinkedIn:[ LinkedIn](https://www.linkedin.com/in/diegoarturoh/)
+👤 Diego Hernández
+- GitHub: [@diehoh40](https://github.com/diegoh40)
+- Twitter: [@Diegoart80](https://twitter.com/Diegoart80)
+- LinkedIn:[ LinkedIn](https://www.linkedin.com/in/diegoarturoh/)
 
 👤 **Author3**
 
