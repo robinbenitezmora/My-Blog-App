@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
 </div>
 
 
-<!-- PROJECT DESCRIPTION -->
+<!-- PROJECT DESCRIPTION. -->
 
 # 📖 My Blog App with Rails <a name="about-project"></a>
 
