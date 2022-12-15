@@ -1,14 +1,4 @@
 Rails.application.routes.draw do
-  # namespace :api do
-  #   namespace :v1 do
-  #     get 'comments/index'
-  #     get 'comments/create'
-  #     get 'users/index'
-  #     get 'users/show'
-  #     get 'posts/index'
-  #     get 'posts/show'
-  #   end
-  # end
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   root 'users#index'
@@ -22,12 +12,12 @@ Rails.application.routes.draw do
   # ROUTES FOR API
   namespace :api do
     namespace :v1 do
-      resources :users do
-        resources :posts, format: :json do
-          resources :comments, format: :json
-          resources :likes, format: :json
-        end
-      end
+      post 'users/login' => 'users#login'
+      post 'users/signup' => 'users#signup'
+      get 'users/:user_id/posts' => 'posts#user_posts'
+      get 'users/:user_id/posts/:post_id/comments' => 'posts#list_comments'
+      post 'users/posts/:post_id/addcomment' => 'posts#add-comment'
+      resources :users, only: [:index, :show]
     end
   end
 end
