@@ -157,16 +157,22 @@ To run tests, run the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
 👤 **Author1**
 
 - GitHub: [@robinbenitezmora](https://github.com/robinbenitezmora)
 - Twitter: [@Mecanico_Robin](https://twitter.com/mecanico_robin)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/robin-benitez-mora/)
 
-👤 **Author2**
+👥 **Author2**
 
-👤 **Oluyemi Paul Olasunkanmi**
+👤 Diego Hernández
+- GitHub: [@diehoh40](https://github.com/diegoh40)
+- Twitter: [@Diegoart80](https://twitter.com/Diegoart80)
+- LinkedIn:[ LinkedIn](https://www.linkedin.com/in/diegoarturoh/)
+
+👤 **Author3**
+
+👤 **Oluyemi Paul**
 - GitHub: [@Ol-create](https://www.github.com/Ol-create)
 - Twitter: [@OluyemiPaul99](https://twitter.com/OluyemiPaul99)
 - LinkedIn: [@paul-oluyemi](https://linkedin.com/in/paul-oluyemi)
