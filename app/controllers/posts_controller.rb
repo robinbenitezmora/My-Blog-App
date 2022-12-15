@@ -3,6 +3,13 @@ class PostsController < ApplicationController
 
   def index
     @user = User.find_by!(id: params[:user_id])
+    respond_to do |format|
+      format.html
+      format.json { render json: @user.posts }
+      format.xml { render xml: @user.posts
+    end
+  end
+
   end
 
   def show
@@ -10,6 +17,12 @@ class PostsController < ApplicationController
     @post = Post.find_by!(id: params[:id])
     @post = Post.includes(:comments, :author).find_by!(author_id: params[:user_id], id: params[:id])
     @user = current_user
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @post.to_json(include: [:comments]) }
+      format.xml { render xml: @post }
+    end
   end
 
   def new
