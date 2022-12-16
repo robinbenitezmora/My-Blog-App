@@ -16,7 +16,7 @@ REQUIRED SECTIONS:
 - Future Features
 - Contributing
 - Show your support
-- Acknowledgements
+- Acknowledgements.
 - License
 
 After you're finished please remove all the comments and instructions!
