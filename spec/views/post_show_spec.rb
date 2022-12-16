@@ -19,8 +19,8 @@ RSpec.describe 'User pages functionality: post show page', type: :feature do
 
   let!(:comment) do
     Comment.create(
-      post_id: post.id,
-      author_id: user.id,
+      post_id: Post.first.id,
+      author_id: User.first.id,
       text: 'I love her so much'
     )
   end

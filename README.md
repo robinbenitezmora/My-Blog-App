@@ -16,7 +16,7 @@ REQUIRED SECTIONS:
 - Future Features
 - Contributing
 - Show your support
-- Acknowledgements
+- Acknowledgements.
 - License
 
 After you're finished please remove all the comments and instructions!
@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
 </div>
 
 
-<!-- PROJECT DESCRIPTION -->
+<!-- PROJECT DESCRIPTION. -->
 
 # 📖 My Blog App with Rails <a name="about-project"></a>
 
@@ -157,7 +157,6 @@ To run tests, run the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
 👤 **Author1**
 
 - GitHub: [@robinbenitezmora](https://github.com/robinbenitezmora)
