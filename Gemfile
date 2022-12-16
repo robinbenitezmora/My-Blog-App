@@ -36,7 +36,7 @@ gem 'mailcatcher'
 # Use cancan in order to work authorizations
 gem 'cancancan'
 
-#Use rswag in order to generate documentation
+# Use rswag in order to generate documentation
 gem 'rswag'
 
 # Use Redis adapter to run Action Cable in production
