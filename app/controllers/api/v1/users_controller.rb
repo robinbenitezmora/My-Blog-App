@@ -1,6 +1,6 @@
 class Api::V1::UsersController < Api::V1::ApplicationController
   def index
-    users = User.all.order(created_at: :asc)
+    users = User.all.order('created_at ASC')
     render json: users, status: :ok
   end
 
